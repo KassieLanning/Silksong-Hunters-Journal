@@ -1,7 +1,42 @@
-#portraits{
-    width:300px;
+h1,h2,h3,h4,h5,h6,p{
+    color:white;
+}
+#portraitCol{
+    height: 100%;
+    padding: 0 20px;
+    overflow: hidden;
+}
+.portraits{
+    position:absolute;
+    width:25%;
     margin-left: 50px;
     margin-top:50px;    
+    overflow-y:scroll;
+    overflow:hidden;
+    box-sizing:content-box;
+    float: left;
+}
+#fullBody{
+    width:50%;
+    background:local;
+}
+.fullBody{
+    position:fixed;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:600px;
+    width:50%;
+    float:inline-start;
+    left:25%;
+
+}
+
+.Journal{
+    padding-left:75%;
+    position:fixed;
+    width:25%;
+    float:left;
 }
 #HJPortrait{
     border:0px;
