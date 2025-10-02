@@ -2,43 +2,28 @@
 <html>
     <link rel="stylesheet" href="stylesheet.css">
     <title>Pale Spider's Journal</title>
-    <script language="javascript">
-        /*function creatureSelect(name){
-            for(i=0;document.getElementsByClassName[i] == name;i++){
-                console.log("Loops.")
-            }
-            if (document.getElementsByClassName("portrait").class == ""){
-                document.getElementById("fullBody").src = "Assets/Full/B_Mossgrub.png"
-                console.log("Works")
-            }
-            else{
-                console.log("Not Mossgrub")
-            }
-        }
-        */
-    </script>
     <body>
         <div class="portraits">
-            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Mossgrub.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Mossgrub.png'">
-            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Massive_Mossgrub.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Massive_Mossgrub.png'">
-            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Mossmir.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/Mossmir_Idle.png'">
-            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Moss_Mother.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Moss_Mother.png'">
-            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Aknid.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Aknid.png'">
-            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Skull_Scuttler.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Skull_Scuttler.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Skullwing.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Skullwing.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Skull_Brute.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Skull_Brute.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Skull_Tyrant.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Skull_Tyrant.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Kilik.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Kilik.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Beastfly.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Beastfly.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Savage_Beastfly.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Savage_Beastfly.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Caranid.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Caranid.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Vicious_Caranid.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Vicious_Caranid.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Hardbone_Hopper.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Hardbone_Hopper.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Hardbone_Elder.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Hardbone_Elder.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Tarmite.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Tarmite.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Mawling.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Mawling.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Marrowmaw.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/Marrowmaw_Idle.png'">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Hoker.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Hoker.png'">
+            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Mossgrub.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Mossgrub.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub', document.getElementById('creature_Description').innerHTML = 'Fur covered crawler with a series of sharp spikes along its back.'">
+            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Massive_Mossgrub.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Massive_Mossgrub.png', document.getElementById('creature_Name').innerHTML = 'Massive Mossgrub', document.getElementById('creature_Description').innerHTML = 'Unnaturally overgrown Mossgrub, bred within the Citadel\'s Memorium.'">
+            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Mossmir.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/Mossmir_Idle.png', document.getElementById('creature_Name').innerHTML = 'Mossmir', document.getElementById('creature_Description').innerHTML = 'Small fluttering creature capable of defending itself with its small stinger.'">
+            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Moss_Mother.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Moss_Mother.png', document.getElementById('creature_Name').innerHTML = 'Moss Mother', document.getElementById('creature_Description').innerHTML = 'Adult Mossmir with fully developed stinger and hardened hide.'">
+            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Aknid.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Aknid.png', document.getElementById('creature_Name').innerHTML = 'Aknid', document.getElementById('creature_Description').innerHTML = 'Winged insect that feeds upon moss and lichen in the caves above Bone Bottom.'">
+            <img class="portrait" id="HJPortrait" src="Assets/Portraits/HJ_Skull_Scuttler.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Skull_Scuttler.png', document.getElementById('creature_Name').innerHTML = 'Skull Scuttler', document.getElementById('creature_Description').innerHTML = 'Small, soft bug that uses the hard skulls of the Marrow for protection and disguise.'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Skullwing.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Skullwing.png', document.getElementById('creature_Name').innerHTML = 'Skullwing', document.getElementById('creature_Description').innerHTML = 'Airborne relative of the grounded Skull Scuttler, found only in the Marrow\'s deepest, hottest caves.'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Skull_Brute.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Skull_Brute.png', document.getElementById('creature_Name').innerHTML = 'Skull Brute', document.getElementById('creature_Description').innerHTML = 'Soft bug beneath a huge, horned skull. Charges at intruders to protect its territory and its smaller companions.'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Skull_Tyrant.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Skull_Tyrant.png', document.getElementById('creature_Name').innerHTML = 'Skull Tyrant', document.getElementById('creature_Description').innerHTML = 'Rare, enormous Skull Scuttler. The Marrow\'s largest predator, and the most feared for its ferocious temperament.'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Kilik.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Kilik.png', document.getElementById('creature_Name').innerHTML = 'Kilik', document.getElementById('creature_Description').innerHTML = 'Small bony bug that favours dark tunnels. Can expand its spiked carapace to ward against attacking predators.'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Beastfly.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Beastfly.png', document.getElementById('creature_Name').innerHTML = 'Beastfly', document.getElementById('creature_Description').innerHTML = 'Aggressive fly of Pharloom\'s lowlands. Rams prey with its hardbone mask.'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Savage_Beastfly.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Savage_Beastfly.png', document.getElementById('creature_Name').innerHTML = 'Savage Beastfly', document.getElementById('creature_Description').innerHTML = 'Angered, adult Beastfly with a weighty body and a thickened hardshell mask.'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Caranid.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Caranid.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Vicious_Caranid.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Vicious_Caranid.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Hardbone_Hopper.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Hardbone_Hopper.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Hardbone_Elder.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Hardbone_Elder.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Tarmite.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Tarmite.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Mawling.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Mawling.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Marrowmaw.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/Marrowmaw_Idle.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub'">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Hoker.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Hoker.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub'">
             <img id="HJPortrait" src="Assets/Portraits/HJ_Flintbeetle.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Flintbeetle.png'">
             <img id="HJPortrait" src="Assets/Portraits/HJ_Rhinogrund.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Rhinogrund.png'">
             <img id="HJPortrait" src="Assets/Portraits/HJ_Gromling.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Gromling.png'">
@@ -258,10 +243,11 @@
             <img id="HJPortrait" src="Assets/Portraits/HJ_Lost_Lace.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Mossgrub.png'">
         </div>
         <div class="fullBody">
-            <img id="fullBody" src="Assets/Full/B_Bell_Beast.png">
+            <img id="fullBody" src="Assets/Full/B_Mossgrub.png">
         </div>
         <div class="Journal">
-            <h1>Bell Beast</h1>
+            <h1 id="creature_Name">Mossgrub</h1>
+            <h1 id="creature_Description" >Fur covered crawler with a series of sharp spikes along its back.</h1>
         </div>    
     </body>
 </html>
