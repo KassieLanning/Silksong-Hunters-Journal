@@ -1,5 +1,5 @@
 @font-face{font-family: Perpetua; src: url(Assets/perpetua.ttf)}
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p,div{
     color:white;
     font-family: Perpetua;
     text-align: center;
@@ -8,12 +8,20 @@ h1,h2,h3,h4,h5,h6,p{
     font-size:48px
 }
 #creature_Description{
-    font-size:32px;
+    font-size:24px;
     font-style:italic;
 }
 #hornet_Comment{
-    font-size:32px;
+    font-size:24px;
     font-style:italic;
+}
+#creature_Location{
+    border:solid;
+    border-radius:7px;
+    color:white;
+    width:150px;
+    text-align:center;
+    font-size:24px;
 }
 #portraitCol{
     height: 100%;
