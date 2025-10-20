@@ -5,13 +5,17 @@ h1,h2,h3,h4,h5,h6,p,div{
     text-align: center;
 }
 #creature_Name{
-    font-size:48px
+    font-size:48px;
+    margin-bottom: 0px;
 }
 #creature_Description{
+    margin-top:3px;
     font-size:24px;
     font-style:italic;
 }
 #hornet_Comment{
+    margin-top:3px;
+    margin-bottom:3px;
     font-size:24px;
     font-style:italic;
 }
@@ -22,6 +26,16 @@ h1,h2,h3,h4,h5,h6,p,div{
     width:150px;
     text-align:center;
     font-size:24px;
+    float:left
+}
+#enemyHP{
+    border:solid;
+    width:200px;
+    text-align:center;
+    font-size:24px;
+    color:white;
+    border-radius:7px;
+    float:right;
 }
 #portraitCol{
     height: 100%;
