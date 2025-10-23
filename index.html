@@ -154,6 +154,10 @@
         function health(n){
             document.getElementById('enemyHP').innerHTML = 'Health: ' + n
         }
+        function drops(r,s){
+            document.getElementById('rosary').innerHTML = r;
+            document.getElementById('shards').innerHTML = s;
+        }
     </script>
     <body>
         <div class="portraits"> <!-- This is where the left column of the site loads, all 237-ish creatures in Hollow Knight: Silksong -->
@@ -183,7 +187,7 @@
             <img id="HJPortrait" src="Assets/Portraits/HJ_Grom.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Grom.png', document.getElementById('creature_Name').innerHTML = 'Grom', document.getElementById('creature_Description').innerHTML = 'Burrowing worm that uses its many blunted teeth to dig through even the hardest bone.', document.getElementById('hornet_Comment').innerHTML = 'They ceaselessly churn through rock and bone without ever seeming to rest. Do they have a destination? Or are they compelled to dig forever deeper?', worm()">
             <img id="HJPortrait" src="Assets/Portraits/HJ_Bell_Beast.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Bell_Beast.png', document.getElementById('creature_Name').innerHTML = 'Bell Beast', document.getElementById('creature_Description').innerHTML = 'Huge, hardbone bug that lives within and travels through the veins of old bells across Pharloom.', document.getElementById('hornet_Comment').innerHTML = 'This one has allied themself with me, either as thanks for their saving or respect for one judged as equal. Whichever the reason, their fellowship is welcome.', marrow()">
             <img id="HJPortrait" src="Assets/Portraits/HJ_Pilgrim_Groveller.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Pilgrim_Groveller.png', document.getElementById('creature_Name').innerHTML = 'Pilgrim Groveller', document.getElementById('creature_Description').innerHTML = 'Basic bug of Pharloom, laid low upon the ground.', document.getElementById('hornet_Comment').innerHTML = 'Taken by Pharloom\'s Haunting, the bug is now capable of little more than prayer and aggression.', marrow()">
-            <img id="HJPortrait" src="Assets/Portraits/HJ_Pilgrim_Pouncer.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Pilgrim_Pouncer.png', document.getElementById('creature_Name').innerHTML = 'Pilgrim Pouncer', document.getElementById('creature_Description').innerHTML = 'Agile bug of Pharloom, its higher functions have been lost to the Haunting.', document.getElementById('hornet_Comment').innerHTML = 'With a softer shell than most, they have relied on their athleticism to survive.', marrow()">
+            <img id="HJPortrait" src="Assets/Portraits/HJ_Pilgrim_Pouncer.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Pilgrim_Pouncer.png', document.getElementById('creature_Name').innerHTML = 'Pilgrim Pouncer', document.getElementById('creature_Description').innerHTML = 'Agile bug of Pharloom, its higher functions have been lost to the Haunting.', document.getElementById('hornet_Comment').innerHTML = 'With a softer shell than most, they have relied on their athleticism to survive.', marrow(), healthb(20,80), drops('5', '2-3')">
             <img id="HJPortrait" src="Assets/Portraits/HJ_Pilgrim_Hornfly.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Pilgrim_Hornfly.png', document.getElementById('creature_Name').innerHTML = 'Pilgrim Hornfly', document.getElementById('creature_Description').innerHTML = 'Short pilgrim that uses their long horn to launch upon threats.', document.getElementById('hornet_Comment').innerHTML = '', marrow()">
             <img id="HJPortrait" src="Assets/Portraits/HJ_Pilgrim_Hulk.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Pilgrim_Hulk.png', document.getElementById('creature_Name').innerHTML = 'Pilgrim Hulk', document.getElementById('creature_Description').innerHTML = 'Sturdy bug lost to the Haunting. Rolls at threats with no care for its own discomfort.', document.getElementById('hornet_Comment').innerHTML = 'A rare built bug within these ailing lands. Most pilgrims\' shells seem small by comparison. What nourishment did they discover to grow so large?', marrow()">
             <img id="HJPortrait" src="Assets/Portraits/HJ_Pilgrim_Bellbearer.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Pilgrim_Bellbearer.png', document.getElementById('creature_Name').innerHTML = 'Pilgrim Bellbearer', document.getElementById('creature_Description').innerHTML = 'Common bug wielding a set of old bells. the bug will fling the bells at anyone it deems still free.', document.getElementById('hornet_Comment').innerHTML = 'Their bells would once have rung with hope and mirth, lifting the spirits of any climbing companions. Sadly, those instruments have turned purely to combative use.', marrow()">
@@ -409,6 +413,13 @@
             </div>
             <div id="enemyHP">
                 N/A
+            </div>
+            <div id="enemyDrops">
+                <img src="Assets/rosary.png" style="width:20px">
+                <p id="rosary" style="display:inline">N/A</p>
+                <img src="Assets/shards.png" style="width:20px">
+                <p id="shards" style="display:inline">N/A</p>
+
             </div>
         </div>    
     </body>

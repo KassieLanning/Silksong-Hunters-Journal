@@ -37,6 +37,16 @@ h1,h2,h3,h4,h5,h6,p,div{
     border-radius:7px;
     float:right;
 }
+#enemyDrops{
+    margin-top:5px;
+    border:solid;
+    width:150px;
+    text-align:center;
+    font-size:24px;
+    color:white;
+    border-radius:7px;
+    float:left;
+}
 #portraitCol{
     height: 100%;
     padding: 0 20px;
