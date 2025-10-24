@@ -47,6 +47,16 @@ h1,h2,h3,h4,h5,h6,p,div{
     border-radius:7px;
     float:left;
 }
+#creatureFilter{
+    margin-top:5px;
+    border:solid;
+    width:200px;
+    text-align:center;
+    font-size:24px;
+    color:white;
+    border-radius:7px;
+    float:right;
+}
 #portraitCol{
     height: 100%;
     padding: 0 20px;
@@ -84,10 +94,10 @@ h1,h2,h3,h4,h5,h6,p,div{
     width:25%;
     float:left;
 }
-#HJPortrait{
+.HJPortrait{
     border:0px;
 }
-#HJPortrait:hover{
+.HJPortrait:hover{
     transition:ease-in-out, 0.5s;
     opacity:50%;
     border:5px;
