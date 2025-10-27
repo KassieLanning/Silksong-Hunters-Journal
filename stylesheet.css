@@ -4,6 +4,12 @@ h1,h2,h3,h4,h5,h6,p,div{
     font-family: Perpetua;
     text-align: center;
 }
+button{
+    width:110px;
+    font-size:11.5px;
+    color:white;
+    background-color:black;
+}
 #creature_Name{
     font-size:48px;
     margin-bottom: 0px;
@@ -35,27 +41,29 @@ h1,h2,h3,h4,h5,h6,p,div{
     font-size:24px;
     color:white;
     border-radius:7px;
-    float:right;
+    float:inline-start;
 }
 #enemyDrops{
     margin-top:5px;
     border:solid;
-    width:150px;
+    width:355px;
     text-align:center;
     font-size:24px;
     color:white;
     border-radius:7px;
     float:left;
+
 }
 #creatureFilter{
     margin-top:5px;
     border:solid;
-    width:200px;
+    width:355px;
     text-align:center;
-    font-size:24px;
+    font-size:20px;
     color:white;
     border-radius:7px;
-    float:right;
+    float:left;
+    padding:0px;
 }
 #portraitCol{
     height: 100%;

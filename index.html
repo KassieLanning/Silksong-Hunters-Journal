@@ -158,23 +158,23 @@
             document.getElementById('rosary').innerHTML = r;
             document.getElementById('shards').innerHTML = s;
         }
-        
         function resetFilter(){
             var elem = document.querySelectorAll('.HJPortrait');
 
             for(var i=0; i<elem.length; i++){
                 elem[i].style.display = 'inline';
             }
-            document.getElementById('currFilter').innerHTML = "Current Filter: <br>None"
+            document.getElementById('currFilter').innerHTML = "No Filter"
         }
-        function boneFilter(){
+        function filter(area, desc){
             var non = document.querySelectorAll('.HJPortrait');
             for(var i=0; i<non.length; i++){
-                if(non[i].id != "bone"){
+                non[i].style.display='inline';
+                if(non[i].id != area){
                     non[i].style.display = 'none';
                 }
             }
-            document.getElementById('currFilter').innerHTML = "Current Filter: <br>Bone Bottom"
+            document.getElementById('currFilter').innerHTML = desc
         }
     </script>
     <body>
@@ -439,10 +439,37 @@
                 <p id="shards" style="display:inline">N/A</p>
             </div>
             <div id="creatureFilter">
-                <p id="currFilter">Current Filter: <br>None</p>
-                <button onclick="resetFilter()">None</button>
+                <label id="currFilter">No Filter</label>
                 <br>
-                <button onclick="boneFilter()">Bone Bottom</button>
+                <button onclick="resetFilter()">None</button>
+                <button style="background-color: #222E20"onclick="filter('bone', 'Bone Bottom')">Bone Bottom</button>
+                <button style="background-color: #2B2B2B" onclick="filter('marrow', 'The Marrow')">The Marrow</button>
+                <button style="background-color: #312516" onclick="filter('docks', 'Deep Docks')">Deep Docks</button>
+                <button style="background-color: #2D1C18" onclick="filter('march', 'Hunter\'s March')">Hunters March</button>
+                <button style="background-color: #252919" onclick="filter('fields', 'Far Fields')">Far Fields</button>
+                <button style="background-color: #1B2424" onclick="filter('grey', 'Greymoor')">Greymoor</button>
+                <button style="background-color: #352B1D" onclick="filter('bell', 'Bellhart')">Bellhart</button>
+                <button style="background-color: #23241C" onclick="filter('shell', 'Shellwood')">Shellwood</button>
+                <button style="background-color: #272521" onclick="filter('worm', 'Wormways')">Wormways</button>
+                <button style="background-color: #291F1A" onclick="filter('sinner', 'Sinners Road')">Sinners Road</button>
+                <button style="background-color: #2D281F" onclick="filter('steps', 'Blasted Steps')">Blasted Steps</button>
+                <button style="background-color: #363323" onclick="filter('choral', 'Choral Chambers')">Choral Chambers</button>
+                <button style="background-color: #191B1C" onclick="filter('under', 'Underworks')">Underworks</button>
+                <button style="background-color: #132317" onclick="filter('wisp', 'Wisp Thicket')">Wisp Thicket</button>
+                <button style="background-color: #2B2E26" onclick="filter('cog', 'Cogwork Core')">Cogwork Core</button>
+                <button style="background-color: #343535" onclick="filter('ward', 'Whiteward')">Whiteward</button>
+                <button style="background-color: #25282A" onclick="filter('slab', 'The Slab')">The Slab</button>
+                <button style="background-color: #18212D" onclick="filter('fay', 'Mount Fay')">Mount Fay</button>
+                <button style="background-color: #342615" onclick="filter('vaults', 'Whispering Vaults')">Whispering Vaults</button>
+                <button style="background-color: #291E14" onclick="filter('halls', 'High Halls')">High Halls</button>
+                <button style="background-color: #2F2D28" onclick="filter('memorium', 'The Memorium')">The Memorium</button>
+                <button style="background-color: #282816" onclick="filter('swamp', 'Bilewater')">Bilewater</button>
+                <button style="background-color: #192429" onclick="filter('ducts', 'Petrified Ducts')">Petrified Ducts</button>
+                <button style="background-color: #192D21" onclick="filter('verdania', 'Lost Verdania')">Lost Verdania</button>
+                <button style="background-color: #342124" onclick="filter('karak', 'Sands of Karak')">Sands of Karak</button>
+                <button style="background-color: #191A24" onclick="filter('surface', 'The Surface')">The Surface</button>
+                <button style="background-color: #191A24" onclick="filter('cradle', 'The Cradle')">The Cradle</button>
+                <button style="background-color: #1D1F1F" onclick="filter('abyss', 'The Abyss')">The Abyss</button>
             </div>
         </div>    
     </body>
