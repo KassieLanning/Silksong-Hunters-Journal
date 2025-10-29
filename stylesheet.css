@@ -67,6 +67,12 @@ button{
     max-height:100px;
     overflow:scroll;
     overflow-x:hidden;
+    overflow-y:unset;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+#creatureFilter::-webkit-scrollbar{
+    display:none;
 }
 #currFilter{
     position:sticky;
@@ -111,7 +117,8 @@ button{
     position:fixed;
     width:26%;
     float:left;
-    max-width:400px
+    max-width:400px;
+    overflow:hidden
 }
 .HJPortrait{
     border:0px;
