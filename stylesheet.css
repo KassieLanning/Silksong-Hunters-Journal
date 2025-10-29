@@ -65,7 +65,8 @@ button{
     float:left;
     padding:0px;
     max-height:100px;
-    overflow:scroll
+    overflow:scroll;
+    overflow-x:hidden;
 }
 #currFilter{
     position:sticky;
