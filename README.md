@@ -4,3 +4,7 @@ This website is going to be a functional web version of the in-game Hunter's Jou
 * Health Data
 * Toggleable Filters
 * Creature loot
+
+___
+
+Created by [@G0ddessV1](https://x.com/g0ddessV1) on twitter
