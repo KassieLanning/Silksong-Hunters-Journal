@@ -3,6 +3,11 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Pale Spider's Journal</title>
     <script>
+        function locate(name, border, color){
+            document.getElementById('creature_Location').innerHTML = name
+            document.getElementById('creature_Location').style.borderColor = border
+            document.getElementById('creature_Location').style.backgroundColor = color
+        }
         function bone(){
             document.getElementById('creature_Location').innerHTML = 'Bone Bottom';
             document.getElementById('creature_Location').style.borderColor = '#7BA96D';
@@ -179,7 +184,7 @@
     </script>
     <body>
         <div class="portraits"> <!-- This is where the left column of the site loads, all 237-ish creatures in Hollow Knight: Silksong -->
-            <img style="display:inline" class="HJPortrait"id="bone" src="Assets/Portraits/HJ_Mossgrub.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Mossgrub.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub', document.getElementById('creature_Description').innerHTML = 'Fur covered crawler with a series of sharp spikes along its back.', document.getElementById('hornet_Comment').innerHTML = 'If not for the spikes, I would think it an appealing bug.', bone(), healthb(10,20)">
+            <img style="display:inline" class="HJPortrait"id="bone" src="Assets/Portraits/HJ_Mossgrub.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Mossgrub.png', document.getElementById('creature_Name').innerHTML = 'Mossgrub', document.getElementById('creature_Description').innerHTML = 'Fur covered crawler with a series of sharp spikes along its back.', document.getElementById('hornet_Comment').innerHTML = 'If not for the spikes, I would think it an appealing bug.', locate('Bone Bottom', '#7BA96D', '#222E20'), healthb(10,20)">
             <img style="display:inline" class="HJPortrait"id="bone" src="Assets/Portraits/HJ_Massive_Mossgrub.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Massive_Mossgrub.png', document.getElementById('creature_Name').innerHTML = 'Massive Mossgrub', document.getElementById('creature_Description').innerHTML = 'Unnaturally overgrown Mossgrub, bred within the Citadel\'s Memorium.', document.getElementById('hornet_Comment').innerHTML = 'So close to a perfect furred form... If only they\'d been able to breed out the spines.', bone(), healthb('N/A', 'N/A')">
             <img style="display:inline" class="HJPortrait"id="bone" src="Assets/Portraits/HJ_Mossmir.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/Mossmir_Idle.png', document.getElementById('creature_Name').innerHTML = 'Mossmir', document.getElementById('creature_Description').innerHTML = 'Small fluttering creature capable of defending itself with its small stinger.', document.getElementById('hornet_Comment').innerHTML = 'This bug is soft and clumsy, but to its fortune its home caves seem relatively free of effective predators. I wonder why that is.', bone(), healthb('N/A', 'N/A')">
             <img style="display:inline" class="HJPortrait"id="bone" src="Assets/Portraits/HJ_Moss_Mother.png" onclick="document.getElementById('fullBody').src = 'Assets/Full/B_Moss_Mother.png', document.getElementById('creature_Name').innerHTML = 'Moss Mother', document.getElementById('creature_Description').innerHTML = 'Adult Mossmir with fully developed stinger and hardened hide.', document.getElementById('hornet_Comment').innerHTML = 'Motherhood is an instinct that can push creatures beyond what seems their normal limits. It turns even weaker beasts like these into formidable foes.', bone(), health(120)">
