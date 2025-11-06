@@ -18,14 +18,6 @@
             document.getElementById('rosary').innerHTML = r;
             document.getElementById('shards').innerHTML = s;
         }
-        function resetFilter(){
-            var elem = document.querySelectorAll('.HJPortrait');
-
-            for(var i=0; i<elem.length; i++){
-                elem[i].style.display = 'inline';
-            }
-            document.getElementById('currFilter').innerHTML = "No Filter"
-        }
         function filter(area, desc){
             var non = document.querySelectorAll('.HJPortrait');
             for(var i=0; i<non.length; i++){
@@ -36,6 +28,15 @@
             }
             document.getElementById('currFilter').innerHTML = desc
         }
+        function resetFilter(){
+            var elem = document.querySelectorAll('.HJPortrait');
+
+            for(var i=0; i<elem.length; i++){
+                elem[i].style.display = 'inline';
+            }
+            document.getElementById('currFilter').innerHTML = "No Filter"
+        }
+        
     </script>
     <body>
         <div class="portraits"> <!-- This is where the left column of the site loads, all 237-ish creatures in Hollow Knight: Silksong -->
