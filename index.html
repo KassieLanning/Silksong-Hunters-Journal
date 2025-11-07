@@ -22,19 +22,13 @@
             var non = document.querySelectorAll('.HJPortrait');
             for(var i=0; i<non.length; i++){
                 non[i].style.display='inline';
-                if(non[i].id != area){
-                    non[i].style.display = 'none';
+                if(area != 'N/A'){
+                    if(non[i].id != area){
+                        non[i].style.display = 'none';
+                    }
                 }
             }
             document.getElementById('currFilter').innerHTML = desc
-        }
-        function resetFilter(){
-            var elem = document.querySelectorAll('.HJPortrait');
-
-            for(var i=0; i<elem.length; i++){
-                elem[i].style.display = 'inline';
-            }
-            document.getElementById('currFilter').innerHTML = "No Filter"
         }
         
     </script>
@@ -301,7 +295,7 @@
             </div>
             <div id="creatureFilter">
                 <div id="currFilter">No Filter</div>
-                <button onclick="resetFilter()">None</button>
+                <button onclick="filter('N/A', 'No Filter')">None</button>
                 <button style="background-color: #222E20"onclick="filter('bone', 'Bone Bottom')">Bone Bottom</button>
                 <button style="background-color: #2B2B2B" onclick="filter('marrow', 'The Marrow')">The Marrow</button>
                 <button style="background-color: #312516" onclick="filter('docks', 'Deep Docks')">Deep Docks</button>
