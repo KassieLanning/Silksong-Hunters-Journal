@@ -34,6 +34,12 @@ button{
     }
     #creatureFilter{
         width:215px !important;
+        max-height:400px !important;
+        font-size:40px;
+        button{
+            height:50px;
+            padding:3px;
+        }
     }
     #fullBody{
         margin-top:100% !important;
