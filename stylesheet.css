@@ -19,6 +19,30 @@ button{
     font-size:24px;
     font-style:italic;
 }
+@media screen and (orientation:portrait){
+    #hornet_Commentimg{
+        width:100% !important;
+    }
+    #creature_Location{
+        width:215px !important;
+    }
+    #enemyHP{
+        width:215px !important;
+    }
+    #enemyDrops{
+        width:215px !important;
+    }
+    #creatureFilter{
+        width:215px !important;
+    }
+    #fullBody{
+        margin-top:100% !important;
+    }
+    
+}
+#hornet_Commentimg{
+    width:375px;
+}
 #hornet_Comment{
     margin-top:3px;
     margin-bottom:3px;
