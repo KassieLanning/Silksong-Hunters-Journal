@@ -7,22 +7,22 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Pale Spider's Journal</title>
     <script>
-        function locate(name, border, color){
+        function locate(name, border, color){ //This function is how the location box knows what to display when a creature is clicked
             document.getElementById('creature_Location').innerHTML = name
             document.getElementById('creature_Location').style.borderColor = border
             document.getElementById('creature_Location').style.backgroundColor = color
         }
-        function health(n){
+        function health(n){ //Due to overloading functions not existing in javascript, healthb also exists, these two are for identifying the correct HP and labelling it as such
             document.getElementById('enemyHP').innerHTML = 'Health: ' + n
         }
         function healthb(n,b){
             document.getElementById('enemyHP').innerHTML = 'Health: ' + n + '<br>Black-Threaded: ' + b
         }
-        function drops(r,s){
+        function drops(r,s){ //This function is how the rosary and shell shards box knows what to display
             document.getElementById('rosary').innerHTML = r;
             document.getElementById('shards').innerHTML = s;
         }
-        function filter(area, desc){
+        function filter(area, desc){ //this function is how the filter system operates, running through a simple for loop
             var non = document.querySelectorAll('.HJPortrait');
             for(var i=0; i<non.length; i++){
                 non[i].style.display='inline';
